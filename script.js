@@ -1,4 +1,5 @@
 a = true;
+b= false;
 
 console.log(a)
 
