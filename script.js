@@ -65,9 +65,24 @@
  * CHALLANGE
  */
 
- const myObject = {
-     a: 3,
-     b: true
- };
+//  const myObject = {
+//      a: 3,
+//      b: true
+//  };
 
- console.log(myObject.c);
+//  console.log(myObject.c); //Undefined
+//  console.log(myObject.nonDeclaredVariable); //Undefined
+// //  console.log(nonDeclaredVariable); // nonDeclaredVariable is not defined
+//  myObject.newPropertyWithUndefinedValue = undefined;
+//  console.log(myObject);
+
+
+/**
+ * CHALLANGE
+ */
+
+ let objectWithNestedObject = {};
+ objectWithNestedObject.nestedObject = {};
+ objectWithNestedObject.nestedObject.a = null;
+ objectWithNestedObject["nestedObject"]["b"]=true;
+ console.log(objectWithNestedObject);
