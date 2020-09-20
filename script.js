@@ -1,55 +1,73 @@
-// Example 1
-
-// var a;
-// console.log(a);
-// //console.log(b); //script.js:5 Uncaught ReferenceError: b is not defined
-// let c;
-// console.log(c);
-// // const d;
-// // console.log(d) Uncaught SyntaxError: Missing initializer in const declaration
-
 /**
- * Example 2 -"let"
+ * Example 1 - Create object and modify
  */
-// let myNumber = 10;
-// console.log(myNumber);
-// let myString;
-// console.log(myString);
-// myString = "Amarta Dey";
-// console.log(myString);
-// myString = "This is a changed value";
-// console.log(myString);
+
+//  let myObject;
+
+//  myObject ={
+//      a:10,
+//      b:"abc"
+//  };
+
+//  console.log(myObject);
+
+//  myObject.a = 15;
+//  console.log(myObject);
+//  myObject.c = true;
+
+//  delete myObject.b;
+//   console.log(myObject);
 
 
 /**
- * Example 3 -"var"
+ * CHALLANGE
  */
-// var myNumber = 10;
-// console.log(myNumber);
-// var myString;
-// console.log(myString);
-// myString = "Amarta Dey";
-// console.log(myString);
-// myString = "This is a changed value";
-// console.log(myString);
 
+//  let myPost = {};
+//  myPost.postTitle = "Object is reference Type";
+//  myPost.postLikes = 0;
+//  myPost.shared = false;
+//  console.log(myPost);
+//  myPost.postLikes =  myPost.postLikes +1;
+// delete myPost.shared;
+// console.log(myPost);
+
+//  const myObject={};
+//  myObject.a = 10;
+//  console.log(myObject);
+//  let copyOfMyObject = myObject;
+//  copyOfMyObject.b = false;
+//  console.log(myObject);
+//  console.log(copyOfMyObject);
 
 /**
- * Const
+ * CHALLANGE
  */
-// const myBoolean = true;
-// console.log(myBoolean);
 
-// const myObject = {a:"Amarta", b:2, c:true};
-// console.log(myObject);
+//  let myObject = {
+//      a:true,
+//      b:null,
+//      c:25
+//  };
 
+// console.log(myObject["a"])
+// //  console.log(myObject[a])  ERROR
+// console.log(myObject["b"]);
+// const propertyName = "c";
+// console.log(myObject[propertyName]);
+// console.log(myObject["propertyName"]);
+// // Undefined
 
-var x = 10;
-var y  = true;
-var myObject = {a:x, b:y};
-console.log(x);
-console.log(y);
-console.log(myObject);
-var anotherObject;
-anotherObject = {newA: 20, b:myObject.b, c:myObject};
-console.log(anotherObject);
+// myObject["new" +"Property" +"Name"] = "Amarta Dey";
+// console.log(myObject)
+
+/**
+ * CHALLANGE
+ */
+
+ const myObject = {
+     a: 3,
+     b: true
+ };
+
+ console.log(myObject.c);
