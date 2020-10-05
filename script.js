@@ -9,9 +9,9 @@ const myObject = {
     test: "Haa"
 };
 
-for (i in myObject){
+for (let i in myObject){
     if(i=="key1"||i=="key3"){
         console.log(myObject[i]);
     }
 };
-
+console.log(i);
