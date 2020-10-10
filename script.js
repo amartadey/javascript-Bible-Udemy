@@ -1,13 +1,15 @@
-const menuItems = document.querySelectorAll('.nav-menu');
-console.log(menuItems);
-const LEN = menuItems.length;
+const bt = document.querySelector('button');
+var count = 0
+// bt.onclick = function(){
+//     count++;
+//     let msg = "Button is Clicked "+count+" times";
+//     this.innerHTML = msg;
+//     console.log("Button was Clicked");
+// }
 
-for (let i=0; i<LEN; i++){
-    menuItems[i].onclick = function(){
-        for(let j=0; j<LEN;j++){
-            menuItems[j].classList.remove('active')
-        }
-        menuItems[i].classList.add('active')
-        console.log(menuItems[i].innerHTML);
-    }
+bt.onclick = () =>{
+    count++;
+    let msg = "Button is Clicked "+count+" times";
+    bt.innerHTML = msg;
+    console.log("Button was Clicked");
 }
