@@ -1,18 +1,5 @@
-const myCities = ["London", "New Work","Singapore"];
+const myNumbers = [3,-5,1,10,-7];
+const isPositivenumber = element =>typeof element ==="number" && element >0;
 
-function arrayInfo(ary){
-    for(let i = 0; i<ary.length;i++){
-        console.log(ary[i]+" is located at the index "+i);
-    };
-}
-
-arrayInfo(myCities)
-
-function arrayInfo2(ary){
-    ary.forEach((element,index) => {
-        console.log(element+" is located at the indes "+index);
-    });
-    
-}
-
-arrayInfo2(myCities)
+const positiveCheck = myNumbers.every(isPositivenumber);
+console.log(positiveCheck)
