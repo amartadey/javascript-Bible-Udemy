@@ -1,12 +1,13 @@
-const myNumbers = [1,3,8];
-const squareNumbers = (element,index) => {
-    Math.pow(element,2)
-};
+const postsJSON =[
+    '{"postId":1355,"commentsQuantity":5}',
+    '{"postId":5131,"commentsQuantity":13}',
+    '{"postId":6134,"commentsQuantity":2}'
+];
 
-// let mySquareNumbers = myNumbers.map(element =>  Math.pow(element, 2))
-let mySquareNumbers = myNumbers.map(Math.pow)
+var posts = [];
+for (let i = 0; i < postsJSON.length; i++) {
+    posts.push(JSON.parse(postsJSON[i]));
+}
 
-console.log(mySquareNumbers)
-
-
- 
+console.log(posts);
+console.log(posts[0].postId);
