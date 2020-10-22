@@ -1,12 +1,9 @@
-const posts =[
-    {postId : 1355, commentsQuantity : 5},	
-    {postId : 5131, commentsQuantity : 13},	
-    {postId : 6134, commentsQuantity : 2}	
-];
+//Example 1
 
-function findSinglePost(urId,post){
-    let res = post.find(element => element.postId==urId);
-    console.log(res)
-}
+const myNumbers = [3,5,1,10,7];
 
-findSinglePost(1355, posts)
+const isPositiveNumber = element => typeof element ==='number' && element>0;
+
+const positiveCheck = myNumbers.every(isPositiveNumber);
+
+console.log(positiveCheck)
