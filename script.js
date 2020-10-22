@@ -1,5 +1,15 @@
-const myNumbers = [3,-5,1,10,-7];
-const isPositivenumber = element =>typeof element ==="number" && element >0;
+const myArray = [1,true, "abc"];
 
-const positiveCheck = myNumbers.every(isPositivenumber);
-console.log(positiveCheck)
+myArray.forEach(element => {
+    console.log(element)
+});
+
+var btns = document.querySelectorAll('button');
+btns.forEach(element =>{
+    element.addEventListener('click', function (){
+        btns.forEach(element =>{
+            element.classList.remove('active');
+        })
+        this.classList.add('active')
+    })
+})
