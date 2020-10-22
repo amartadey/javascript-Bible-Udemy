@@ -1,15 +1,4 @@
-const postsJSON =[
-    '{"postId":1355,"commentsQuantity":5}',
-    '{"postId":5131,"commentsQuantity":13}',
-    '{"postId":6134,"commentsQuantity":2}'
-];
+const myNumbers = [10,25,56,100,5];
 
-// var posts = [];
-// for (let i = 0; i < postsJSON.length; i++) {
-//     posts.push(JSON.parse(postsJSON[i]));
-// }
-
-const posts = postsJSON.map(JSON.parse);
-
-console.log(posts);
-console.log(posts[0].postId);
+const filteredNumbers = myNumbers.filter(element => element>10);
+console.log(filteredNumbers)
