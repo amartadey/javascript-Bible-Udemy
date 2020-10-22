@@ -1,4 +1,6 @@
-const myNumbers = [10,25,56,100,5];
+const myArray = [56,[],{},"abc",true,15]
 
-const filteredNumbers = myNumbers.filter(element => element>10);
-console.log(filteredNumbers)
+const result = myArray.find(element =>{
+    return typeof element ==='boolean'
+});
+console.log(result);
