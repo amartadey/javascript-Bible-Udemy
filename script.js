@@ -1,7 +1,3 @@
-const transport = ["Bus","Car","Bicycle","Airplane"];
+const myArray = [10,"abc",true,undefined,null,[1,2]]
 
-const elementFound = (inputArray, searchElement) =>{
-    return(inputArray.some(arre => arre==searchElement?true:false))
-}
-
-console.log(elementFound(transport,"Car"))
+console.log(myArray.includes(11));
