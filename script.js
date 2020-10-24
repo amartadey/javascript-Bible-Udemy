@@ -1,3 +1,6 @@
-const myArray = [10,"abc",true,undefined,null,[1,2]]
+const myNumbers = [5,10,3,15];
 
-console.log(myArray.includes(11));
+const sum = arrayOfNumbers => arrayOfNumbers.reduce((accumulator, number) => {console.log ("Accumulator is "+accumulator+". Number is "+ number); return (accumulator+number)}, 0);
+
+console.log(sum(myNumbers))
+// sum(myNumbers)
