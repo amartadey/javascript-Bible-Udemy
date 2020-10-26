@@ -1,10 +1,8 @@
-const btn1 = "Button 1";
-const btn2 = "Button 2";
+const symNumbers = (...nums) =>{
+    console.log(nums);
+    return nums
+    .filter(num => typeof num == 'number')
+    .reduce((sum, num) => sum+num,0);
+}
 
-const buttons = `<div>
-<button>${btn1}</button>
-<button>${btn2}</button>
-</div>
-`;
-
-document.body.innerHTML = buttons
+console.log(symNumbers("test",1,2,3,4));
