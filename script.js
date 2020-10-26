@@ -1,5 +1,10 @@
-const myNumbers = [10,5,7,12,20];
+const btn1 = "Button 1";
+const btn2 = "Button 2";
 
+const buttons = `<div>
+<button>${btn1}</button>
+<button>${btn2}</button>
+</div>
+`;
 
-
-console.log(myNumbers.sort((a,b)=> a-b))
+document.body.innerHTML = buttons
