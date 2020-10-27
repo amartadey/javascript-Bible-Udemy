@@ -1,8 +1,21 @@
-const symNumbers = (...nums) =>{
-    console.log(nums);
-    return nums
-    .filter(num => typeof num == 'number')
-    .reduce((sum, num) => sum+num,0);
+const personInfo = ({ name, age:personAge, location:{country:origin, city:homeCity }, friendQty=0, recordCreatedAt= new Date().getFullYear()} = person)=>{
+    return {
+        name,
+        personAge,
+        origin,
+        homeCity,
+        friendQty,
+        recordCreatedAt
+    };
 }
 
-console.log(symNumbers("test",1,2,3,4));
+const person = {
+    name: "Alice",
+    age:19,
+    location:{
+        country:"England",
+        city:"London"
+    }
+}
+
+console.log(personInfo(person));
